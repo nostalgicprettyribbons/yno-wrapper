@@ -6,7 +6,7 @@ YNOproject lets you play Yume Nikki and related fan games games directly in your
 
 ## Downloads
 
-[GitHub Releases](https://github.com/nostalgicprettyribbons/yno-wrapper/releases) page.
+[GitHub Releases](https://github.com/nostalgicprettyribbons/yno-wrapper/releases)
 
 ### Windows
 
