@@ -45,24 +45,3 @@ npm run tauri dev
 ```bash
 npm run tauri build
 ```
-
-## How it works
-
-The local Tauri page immediately redirects to:
-
-```text
-https://ynoproject.net
-```
-
-Tauri then displays the existing YNOproject website inside a native desktop window.
-
-## Project structure
-
-```text
-yno-wrapper/
-├── src/                  # Minimal frontend
-├── src-tauri/            # Tauri application
-├── index.html            # Redirects to YNOproject
-├── package.json
-└── vite.config.ts
-```
