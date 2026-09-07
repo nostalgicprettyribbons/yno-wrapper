@@ -18,8 +18,6 @@ A `.deb` package is provided for Debian/Ubuntu-based distributions.
 
 Arch users can convert the `.deb` to an Arch package using [`debtap`](https://github.com/helixarch/debtap).
 
-> On Linux, the application uses the system WebKitGTK runtime.
-
 ## Development
 
 ### Requirements
