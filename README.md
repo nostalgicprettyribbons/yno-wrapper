@@ -66,7 +66,3 @@ yno-wrapper/
 ├── package.json
 └── vite.config.ts
 ```
-
-## License
-
-MIT
