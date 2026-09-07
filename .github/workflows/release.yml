@@ -10,7 +10,7 @@ permissions:
 
 jobs:
   build-linux:
-    name: Build Linux AppImage
+    name: Build Linux Debian Package
     runs-on: ubuntu-22.04
 
     steps:
@@ -39,14 +39,14 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build AppImage
-        run: npm run tauri build -- --bundles appimage
+      - name: Build Debian package
+        run: npm run tauri build -- --bundles deb
 
-      - name: Upload AppImage
+      - name: Upload Debian package
         uses: actions/upload-artifact@v4
         with:
-          name: linux-appimage
-          path: src-tauri/target/release/bundle/appimage/*.AppImage
+          name: linux-deb
+          path: src-tauri/target/release/bundle/deb/*.deb
 
   build-windows:
     name: Build Windows NSIS
@@ -88,10 +88,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Download Linux AppImage
+      - name: Download Linux Debian package
         uses: actions/download-artifact@v4
         with:
-          name: linux-appimage
+          name: linux-deb
           path: release-assets
 
       - name: Download Windows installer
